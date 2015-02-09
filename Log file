@@ -1,16 +1,30 @@
-1423449782757
-host,connection,cache-control,accept,user-agent,accept-encoding,accept-language
-localhost:8080,keep-alive,max-age=0,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36,gzip, deflate, sdch,en-US,en;q=0.8
 
-1423449782833
-host,connection,accept,user-agent,accept-encoding,accept-language
-localhost:8080,keep-alive,*/*,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36,gzip, deflate, sdch,en-US,en;q=0.8
+1423453968718
+accept,accept-language,user-agent,accept-encoding,host,dnt,connection
+text/html  application/xhtml+xml  */*,en-US,Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; EIE10;ENUSMSN; rv:11.0) like Gecko,gzip  deflate,localhost:8080,1,Keep-Alive
 
-1423449792064
-host,connection,cache-control,accept,user-agent,accept-encoding,accept-language
-localhost:8080,keep-alive,max-age=0,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36,gzip, deflate, sdch,en-US,en;q=0.8
 
-1423449792139
-host,connection,accept,user-agent,accept-encoding,accept-language
-localhost:8080,keep-alive,*/*,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36,gzip, deflate, sdch,en-US,en;q=0.8
+1423453985961
+accept,accept-language,user-agent,accept-encoding,host,dnt,connection
+text/html  application/xhtml+xml  */*,en-US,Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; EIE10;ENUSMSN; rv:11.0) like Gecko,gzip  deflate,localhost:8080,1,Keep-Alive
+
+
+1423454015235
+accept,accept-language,user-agent,accept-encoding,host,dnt,connection
+text/html  application/xhtml+xml  */*,en-US,Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; EIE10;ENUSMSN; rv:11.0) like Gecko,gzip  deflate,localhost:8080,1,Keep-Alive
+
+
+1423454020755
+accept,accept-language,user-agent,accept-encoding,host,dnt,connection
+text/html  application/xhtml+xml  */*,en-US,Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; EIE10;ENUSMSN; rv:11.0) like Gecko,gzip  deflate,localhost:8080,1,Keep-Alive
+
+
+1423454047565
+accept,accept-language,user-agent,accept-encoding,host,dnt,connection
+text/html  application/xhtml+xml  */*,en-US,Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; EIE10;ENUSMSN; rv:11.0) like Gecko,gzip  deflate,localhost:8080,1,Keep-Alive
+
+
+1423454066896
+accept,accept-language,user-agent,accept-encoding,host,dnt,connection
+text/html  application/xhtml+xml  */*,en-US,Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; EIE10;ENUSMSN; rv:11.0) like Gecko,gzip  deflate,localhost:8080,1,Keep-Alive
 
