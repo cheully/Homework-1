@@ -1,0 +1,66 @@
+// Creating variables to access the modules for http and fs.
+var http = require ("http"),
+	server = http.createServer(),
+	fs = require("fs");
+
+	// Variable to store the user agent information (usrdata), and a function used to assign that
+	// user information to the variable (capture)
+var usrdata = {},
+	capture = function (data) {
+		usrdata=data;
+	};
+
+// Function used to write to the log.csv file
+function writeToFile(file) {
+	var count = 0; // Counter to keep track of the commas
+	
+	fs.appendFile(file, +new Date); // Add the date/time timestamp to log file
+	fs.appendFile(file, "\n");
+	
+	// Loop to add the headings to the log file
+	for (var p in usrdata){
+		fs.appendFile(file, p);
+		
+		count++; //Increment the count for each appending of headings
+		
+		// Conditional statement to check if we reached the end of the headings (so no comma is added)
+		if (count < Object.keys(usrdata).length) { 
+			fs.appendFile(file, ",");
+		}
+	}
+	
+	// Add a new line to add the values and re-initialized the count to 0
+	fs.appendFile(file, "\n"); count = 0; 
+	
+	// Similar loop as above but it is for the values
+	for (var p in usrdata){
+		fs.appendFile(file, usrdata[p]);
+		count++;
+		if (count < Object.keys(usrdata).length) {
+			fs.appendFile(file, ",");
+		}
+	}
+	
+	fs.appendFile(file, "\n\n"); // Add enough space so that the other logs can be added
+}
+
+server.on("request", function (req, res) {
+	
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.write("Hello World!");
+	
+	// Callback function for adding the request headers
+	var u = function(callback) {
+		callback(req.headers);
+		console.log("Data has been captured!");
+	};
+	
+	// Use the callback function to add the request headers as a parameter to the function capture
+	u(capture);
+	console.log(usrdata);
+	writeToFile("log.csv"); // Call function to add the file
+	res.end();
+
+});	
+
+server.listen(8080);
